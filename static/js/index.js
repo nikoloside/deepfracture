@@ -1,12 +1,12 @@
 window.HELP_IMPROVE_VIDEOJS = false;
 
-var INTERP_BASE = "./static/interpolation/stacked";
-var NUM_INTERP_FRAMES = 240;
+var INTERP_BASE = "./static/interpolation/bunny/output_";
+var NUM_INTERP_FRAMES = 49;
 
 var interp_images = [];
 function preloadInterpolationImages() {
-  for (var i = 0; i < NUM_INTERP_FRAMES; i++) {
-    var path = INTERP_BASE + '/' + String(i).padStart(6, '0') + '.jpg';
+  for (var i = 1; i < NUM_INTERP_FRAMES; i++) {
+    var path = INTERP_BASE + String(i).padStart(4, '0') + '.jpeg';
     interp_images[i] = new Image();
     interp_images[i].src = path;
   }
@@ -70,7 +70,7 @@ $(document).ready(function() {
     $('#interpolation-slider').on('input', function(event) {
       setInterpolationImage(this.value);
     });
-    setInterpolationImage(0);
+    setInterpolationImage(12);
     $('#interpolation-slider').prop('max', NUM_INTERP_FRAMES - 1);
 
     bulmaSlider.attach();
