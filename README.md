@@ -1,14 +1,16 @@
-# Nerfies
+# DeepFracture
 
-This is the repository that contains source code for the [Nerfies website](https://nerfies.github.io).
+This is the repository that contains source code for the [DeepFracture website](https://deepfracture.github.io).
 
-If you find Nerfies useful for your work please cite:
+If you find DeepFracture useful for your work please cite:
 ```
-@article{park2021nerfies
-  author    = {Park, Keunhong and Sinha, Utkarsh and Barron, Jonathan T. and Bouaziz, Sofien and Goldman, Dan B and Seitz, Steven M. and Martin-Brualla, Ricardo},
-  title     = {Nerfies: Deformable Neural Radiance Fields},
-  journal   = {ICCV},
-  year      = {2021},
+@misc{huang2023deepfracture,
+      title={DeepFracture: A Generative Approach for Predicting Brittle Fractures}, 
+      author={Yuhang Huang and Takashi Kanai},
+      year={2023},
+      eprint={2310.13344},
+      archivePrefix={arXiv},
+      primaryClass={cs.GR}
 }
 ```
 
