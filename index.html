@@ -3,23 +3,19 @@
 <head>
   <meta charset="utf-8">
   <meta name="description"
-        content="DeepFracture: A Generative Approach for Predicting Brittle Fractures">
-  <meta name="keywords" content="DeepFracture, brittle fracture animation, cGANs">
+        content="DeepFracture: A Generative Approach for Predicting Brittle Fractures with Neural Discrete Representation Learning">
+  <meta name="keywords" content="DeepFracture, brittle fracture animation, VQ-VAE, BEM, physics simulation, neural network, generative model, brittle fracture prediction, neural discrete representation learning">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>DeepFracture: A Generative Approach for Predicting Brittle Fractures</title>
+  <title>DeepFracture: A Generative Approach for Predicting Brittle Fractures with Neural Discrete Representation Learning</title>
 
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-PYVRSFMDRL"></script>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-SR7FFPBRXX"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
-
-    function gtag() {
-      dataLayer.push(arguments);
-    }
-
+    function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
 
-    gtag('config', 'G-PYVRSFMDRL');
+    gtag('config', 'G-SR7FFPBRXX');
   </script>
 
   <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
@@ -79,7 +75,7 @@
     <div class="container is-max-desktop">
       <div class="columns is-centered">
         <div class="column has-text-centered">
-          <h1 class="title is-1 publication-title">DeepFracture: A Generative Approach for Predicting Brittle Fractures</h1>
+          <h1 class="title is-1 publication-title">DeepFracture: A Generative Approach for Predicting Brittle Fractures with Neural Discrete Representation Learning</h1>
           <div class="is-size-5 publication-authors">
             <span class="author-block">
               <a href="https://nikoloside.github.io">Yuhang Huang</a>,</span>
@@ -96,7 +92,7 @@
               <!-- PDF Link. -->
               <span class="link-block">
                 <a href="https://arxiv.org/pdf/2310.13344v1"
-                   class="external-link button is-normal is-rounded is-dark">
+                   class="external-link button is-normal is-rounded is-dark" disabled>
                   <span class="icon">
                       <i class="fas fa-file-pdf"></i>
                   </span>
@@ -113,34 +109,34 @@
                 </a>
               </span>
               <!-- Video Link. -->
-              <!-- <span class="link-block">
-                <a href="https://www.youtube.com/watch?v=MrKrnHhk8IA"
+              <span class="link-block">
+                <a href="https://www.youtube.com/watch?v=DMBKem8_EKs"
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                       <i class="fab fa-youtube"></i>
                   </span>
                   <span>Video</span>
                 </a>
-              </span> -->
+              </span>
               <!-- Code Link. -->
-              <!-- <span class="link-block">
-                <a href="https://github.com/google/nerfies"
-                   class="external-link button is-normal is-rounded is-dark">
+              <span class="link-block">
+                <a href="#"
+                   class="external-link button is-normal is-rounded is-dark" disabled>
                   <span class="icon">
                       <i class="fab fa-github"></i>
                   </span>
-                  <span>Code</span>
+                  <span>Code (Coming Soon)</span>
                   </a>
-              </span> -->
+              </span>
               <!-- Dataset Link. -->
-              <!-- <span class="link-block">
-                <a href="https://github.com/google/nerfies/releases/tag/0.1"
-                   class="external-link button is-normal is-rounded is-dark">
+              <span class="link-block">
+                <a href="#"
+                   class="external-link button is-normal is-rounded is-dark" disabled>
                   <span class="icon">
-                      <i class="far fa-images"></i>
+                      <i class="fas fa-gamepad"></i>
                   </span>
-                  <span>Data</span>
-                  </a> -->
+                  <span>Demo (Coming Soon)</span>
+                  </a>
             </div>
 
           </div>
@@ -169,10 +165,10 @@
 <section class="hero teaser">
   <div class="container is-max-desktop">
     <div class="hero-body">
-      <img id="teaser"  height="100%" src="./static/images/teaser.png">
+      <img id="teaser"  height="100%" src="./static/images/teaser.jpg">
       </img>
       <h2 class="subtitle has-text-centered">
-        We introduce a novel learning-based approach for generating brittle fracture animations integrated with rigid-body simulations.
+        We introduce a novel learning-based approach for generating brittle fracture animations integrated with rigid-body simulations. We can predict brittle fracture patterns rapidly with impulse information. This approach trains generative models for each shape using brittle fracture simulation data.
 <!-- This approach trains a generator per shape based on a BEM brittle fracture simulation training data. With our method, brittle fracture patterns
 can be rapidly predicted using impulse information. This allows for the seamless continuation of rigid-body simulations upon collision
 detection. -->
@@ -186,45 +182,57 @@ detection. -->
   <div class="hero-body">
     <div class="container">
       <div id="results-carousel" class="carousel results-carousel">
-        <div class="item item-steve">
-          <video poster="" id="steve" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/bunny_ours.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
         <div class="item item-chair-tp">
           <video poster="" id="chair-tp" autoplay controls muted loop playsinline height="100%">
             <source src="./static/videos/pot_ours.mp4"
                     type="video/mp4">
           </video>
         </div>
+        <div class="item item-coffee">
+          <video poster="" id="coffee" autoplay controls muted loop playsinline height="100%">
+            <source src="./static/videos/base_ours.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+        <div class="item item-steve">
+          <video poster="" id="steve" autoplay controls muted loop playsinline height="100%">
+            <source src="./static/videos/bunny-ours.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+        <div class="item item-steve">
+          <video poster="" id="steve" autoplay controls muted loop playsinline height="100%">
+            <source src="./static/videos/bunny-ours-1355.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
         <div class="item item-shiba">
           <video poster="" id="shiba" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/Squirrel_ours.mp4"
+            <source src="./static/videos/squirrel-343-front.mp4"
                     type="video/mp4">
           </video>
         </div>
         <div class="item item-fullbody">
           <video poster="" id="fullbody" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/ours-338.mp4"
+            <source src="./static/videos/squirrel-343.mp4"
                     type="video/mp4">
           </video>
         </div>
         <div class="item item-blueshirt">
           <video poster="" id="blueshirt" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/ours-345.mp4"
+            <source src="./static/videos/squirrel-260.mp4"
                     type="video/mp4">
           </video>
         </div>
         <div class="item item-mask">
           <video poster="" id="mask" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/ours-349.mp4"
+            <source src="./static/videos/squirrel-263.mp4"
                     type="video/mp4">
           </video>
         </div>
         <div class="item item-coffee">
           <video poster="" id="coffee" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/base_ours.mp4"
+            <source src="./static/videos/squirrel-291.mp4"
                     type="video/mp4">
           </video>
         </div>
@@ -260,19 +268,19 @@ detection. -->
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            In the realm of brittle fracture animation, generating realistic destruction animations with physics simulation techniques can be computationally expensive. 
-            Although methods using Voronoi diagrams or pre-fractured patterns work for real-time applications, they often lack realism in portraying brittle fractures. 
+          In the field of brittle fracture animation, generating realistic destruction animations using physics-based simulation methods is computationally expensive. 
+          While techniques based on Voronoi diagrams or pre-fractured patterns are effective for real-time applications, they fail to incorporate collision conditions when determining fractured shapes during runtime.
           </p>
           <p>
-            This paper introduces a novel learning-based approach for seamlessly merging realistic brittle fracture animations with rigid-body simulations.
-            Our method utilizes BEM brittle fracture simulations to create fractured patterns and collision conditions for a given shape, which serve as training data for the learning process. 
-            To effectively integrate collision conditions and fractured shapes into a deep learning framework, we introduce the concept of latent impulse representation and geometrically-segmented signed distance function (GS-SDF). 
-            The latent impulse representation serves as input, capturing information about impact forces on the shape's surface. Simultaneously, a GS-SDF is used as the output representation of the fractured shape. 
+          This paper introduces a novel learning-based approach for predicting fractured shapes based on collision dynamics at runtime. 
+          Our approach seamlessly integrates realistic brittle fracture animations with rigid body simulations, utilising boundary element method (BEM) brittle fracture simulations to generate training data. 
+          To integrate collision scenarios and fractured shapes into a deep learning framework, we introduce generative geometric segmentation, distinct from both instance and semantic segmentation, to represent 3D fragment shapes.
           </p>
           <p>
-            To address the challenge of optimizing multiple fractured pattern targets with a single latent code, we propose an eight-dimensional latent space based on a normal distribution code within our latent impulse representation design. 
-            This adaptation effectively transforms our neural network into a generative one. 
-            Our experimental results demonstrate that our approach can generate significantly more detailed brittle fractures compared to existing techniques, all while maintaining commendable computational efficiency during run-time.
+          We propose an eight-dimensional latent code to address the challenge of optimising multiple discrete fracture pattern targets that share similar continuous collision latent codes. 
+          This code will follow a discrete normal distribution corresponding to a specific fracture pattern within our latent impulse representation design.
+          This adaptation enables the prediction of fractured shapes using neural discrete representation learning. 
+          Our experimental results show that our approach generates considerably more detailed brittle fractures than existing techniques, while the computational time is typically reduced compared to traditional simulation methods at comparable resolutions.
           </p>
         </div>
       </div>
@@ -284,9 +292,8 @@ detection. -->
       <div class="column is-four-fifths">
         <h2 class="title is-3">Video</h2>
         <div class="publication-video">
-          <iframe src="https://www.youtube.com/embed/m5V3NbcX1no?si=9wweZ_Y9L3WfNR6q&amp;showinfo=0"
+          <iframe src="https://www.youtube.com/embed/DMBKem8_EKs?si=9wweZ_Y9L3WfNR6q&amp;showinfo=0"
                   frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-          <!-- <iframe src="https://www.youtube.com/embed/m5V3NbcX1no?si=9wweZ_Y9L3WfNR6q&amp;showinfo=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> -->
         </div>
       </div>
     </div>
@@ -306,7 +313,7 @@ detection. -->
           <h2 class="title is-3 text-center">Bunny</h2>
           <!-- <p> -->
           <video id="dollyzoom" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/bunny_com.mp4"
+            <source src="./static/videos/addition/bunny-com.mp4"
                     type="video/mp4">
           </video>
         </div>
@@ -321,7 +328,7 @@ detection. -->
             <!-- <p>
             </p> -->
             <video id="dollyzoom" autoplay controls muted loop playsinline height="100%">
-              <source src="./static/videos/squirrel_com.mp4"
+              <source src="./static/videos/addition/squirrel-com.mp4"
                       type="video/mp4">
             </video>
           </div>
@@ -337,7 +344,7 @@ detection. -->
           <!-- <p> -->
             
           <video id="dollyzoom" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/base_com.mp4"
+            <source src="./static/videos/addition/base-com.mp4"
                     type="video/mp4">
           </video>
       </div>
@@ -352,7 +359,103 @@ detection. -->
               
             </p> -->
             <video id="dollyzoom" autoplay controls muted loop playsinline height="100%">
-              <source src="./static/videos/pot_com.mp4"
+              <source src="./static/videos/addition/pot-com.mp4"
+                      type="video/mp4">
+            </video>
+          </div>
+
+        </div>
+      </div>
+    </div>
+    <!--/ Matting. -->
+
+    <div class="columns is-centered">
+      <!-- Visual Effects. -->
+      <div class="column content">
+          <h2 class="title is-3 text-center">Attack</h2>
+          <!-- <p> -->
+            
+          <video id="dollyzoom" autoplay controls muted loop playsinline height="100%">
+            <source src="./static/videos/addition/attack-small.blend-result-rgba.mp4"
+                    type="video/mp4">
+          </video>
+      </div>
+      <!--/ Visual Effects. -->
+
+      <!-- Matting. -->
+      <div class="column">
+        <h2 class="title is-3 text-center">Squirrel vs Bunny</h2>
+        <div class="columns is-centered">
+          <div class="column content">
+            <!-- <p>
+              
+            </p> -->
+            <video id="dollyzoom" autoplay controls muted loop playsinline height="100%">
+              <source src="./static/videos/addition/squirrel-attack.blend-result-legacy-rgba.mp4"
+                      type="video/mp4">
+            </video>
+          </div>
+
+        </div>
+      </div>
+    </div>
+    <!--/ Matting. -->
+
+    <div class="columns is-centered">
+      <!-- Visual Effects. -->
+      <div class="column content">
+          <h2 class="title is-3 text-center">Squirrel Falling</h2>
+          <!-- <p> -->
+            
+          <video id="dollyzoom" autoplay controls muted loop playsinline height="100%">
+            <source src="./static/videos/addition/squirrel-falling-1.blend-result-rgba.mp4"
+                    type="video/mp4">
+          </video>
+      </div>
+      <!--/ Visual Effects. -->
+
+      <!-- Matting. -->
+      <div class="column">
+        <h2 class="title is-3 text-center">Squirrel 64<sup>3</sup></h2>
+        <div class="columns is-centered">
+          <div class="column content">
+            <!-- <p>
+              
+            </p> -->
+            <video id="dollyzoom" autoplay controls muted loop playsinline height="100%">
+              <source src="./static/videos/addition/squirrel-263-64.mp4"
+                      type="video/mp4">
+            </video>
+          </div>
+
+        </div>
+      </div>
+    </div>
+    <!--/ Matting. -->
+
+    <div class="columns is-centered">
+      <!-- Visual Effects. -->
+      <div class="column content">
+          <h2 class="title is-3 text-center">Squirrel 128<sup>3</sup></h2>
+          <!-- <p> -->
+            
+          <video id="dollyzoom" autoplay controls muted loop playsinline height="100%">
+            <source src="./static/videos/addition/squirrel-263-128.mp4"
+                    type="video/mp4">
+          </video>
+      </div>
+      <!--/ Visual Effects. -->
+
+      <!-- Matting. -->
+      <div class="column">
+        <h2 class="title is-3 text-center">Squirrel 256<sup>3</sup></h2>
+        <div class="columns is-centered">
+          <div class="column content">
+            <!-- <p>
+              
+            </p> -->
+            <video id="dollyzoom" autoplay controls muted loop playsinline height="100%">
+              <source src="./static/videos/addition/squirrel-263-256.mp4"
                       type="video/mp4">
             </video>
           </div>
@@ -456,17 +559,31 @@ detection. -->
 </section>
 
 
+      <!-- @article{huang2025deepfracture,
+      author = {Huang, Yuhang and Kanai, Takashi},
+      title = {DeepFracture: A Generative Approach for Predicting Brittle Fractures with Neural Discrete Representation Learning},
+      journal = {Computer Graphics Forum},
+      volume = {n/a},
+      number = {n/a},
+      pages = {e70002},
+      keywords = {Animation, Physically Based Animation},
+      doi = {https://doi.org/10.1111/cgf.70002},
+      url = {https://onlinelibrary.wiley.com/doi/abs/10.1111/cgf.70002},
+      eprint = {https://onlinelibrary.wiley.com/doi/pdf/10.1111/cgf.70002}
+        } -->
 <section class="section" id="BibTeX">
   <div class="container is-max-desktop content">
     <h2 class="title">BibTeX</h2>
-    <pre><code>@misc{huang2023deepfracture,
+    <pre><code>
+      @misc{huang2023deepfracture,
       title={DeepFracture: A Generative Approach for Predicting Brittle Fractures}, 
       author={Yuhang Huang and Takashi Kanai},
       year={2023},
       eprint={2310.13344},
       archivePrefix={arXiv},
       primaryClass={cs.GR}
-}</code></pre>
+      }
+</code></pre>
   </div>
 </section>
 
@@ -474,13 +591,13 @@ detection. -->
 <footer class="footer">
   <div class="container">
     <div class="content has-text-centered">
-      <a class="icon-link"
+      <!-- <a class="icon-link"
          href="./static/videos/nerfies_paper.pdf">
         <i class="fas fa-file-pdf"></i>
       </a>
       <a class="icon-link" href="https://github.com/keunhong" class="external-link" disabled>
         <i class="fab fa-github"></i>
-      </a>
+      </a> -->
     </div>
     <div class="columns is-centered">
       <div class="column is-8">
