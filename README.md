@@ -1,9 +1,21 @@
 # DeepFracture
 
-This is the repository that contains source code for the [DeepFracture website](https://deepfracture.github.io).
+This is the repository that contains source code for the [DeepFracture website](https://nikoloside.github.io/deepfracture/).
 
 If you find DeepFracture useful for your work please cite:
 ```
+@article{huang2025deepfracture,
+      author = {Huang, Yuhang and Kanai, Takashi},
+      title = {DeepFracture: A Generative Approach for Predicting Brittle Fractures with Neural Discrete Representation Learning},
+      journal = {Computer Graphics Forum},
+      volume = {n/a},
+      number = {n/a},
+      pages = {e70002},
+      keywords = {Animation, Physically Based Animation},
+      doi = {https://doi.org/10.1111/cgf.70002},
+      url = {https://onlinelibrary.wiley.com/doi/abs/10.1111/cgf.70002},
+      eprint = {https://onlinelibrary.wiley.com/doi/pdf/10.1111/cgf.70002}
+        }
 @misc{huang2023deepfracture,
       title={DeepFracture: A Generative Approach for Predicting Brittle Fractures}, 
       author={Yuhang Huang and Takashi Kanai},
